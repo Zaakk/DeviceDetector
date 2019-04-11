@@ -187,96 +187,66 @@ class DeviceDetector {
         case "iPad11,2":
             return Device(model: iPadModel.ModelMini5(cellularType: .GSM))
         // MARK: iPhone
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
-        case "AppleTV2,1":
-            return Device(model: AppleDeviceModel.Simulator)
+        case "iPhone1,1":
+            return Device(model: iPhoneModel.Original(cellularType: .GSM))
+        case "iPhone1,2":
+            return Device(model: iPhoneModel.Model3G(cellularType: .GSM))
+        case "iPhone2,1":
+            return Device(model: iPhoneModel.Model3GS(cellularType: .GSM))
+        case "iPhone3,1":
+            return Device(model: iPhoneModel.Model4(cellularType: .GSM))
+        case "iPhone3,2":
+            return Device(model: iPhoneModel.Model4(cellularType: .GSM))
+        case "iPhone3,3":
+            return Device(model: iPhoneModel.Model4(cellularType: .CDMA))
+        case "iPhone4,1":
+            return Device(model: iPhoneModel.Model4S(cellularType: .GSM))
+        case "iPhone5,1":
+            return Device(model: iPhoneModel.Model5(cellularType: .GSM))
+        case "iPhone5,2":
+            return Device(model: iPhoneModel.Model5(cellularType: .CDMA))
+        case "iPhone5,3":
+            return Device(model: iPhoneModel.Model5C(cellularType: .GSM))
+        case "iPhone5,4":
+            return Device(model: iPhoneModel.Model5C(cellularType: .GSM))
+        case "iPhone6,1":
+            return Device(model: iPhoneModel.Model5S(cellularType: .GSM))
+        case "iPhone6,2":
+            return Device(model: iPhoneModel.Model5S(cellularType: .GSM))
+        case "iPhone7,2":
+            return Device(model: iPhoneModel.Model6S(cellularType: .GSM))
+        case "iPhone7,1":
+            return Device(model: iPhoneModel.Model6(cellularType: .GSM))
+        case "iPhone8,1":
+            return Device(model: iPhoneModel.Model6S(cellularType: .GSM))
+        case "iPhone8,2":
+            return Device(model: iPhoneModel.Model6SPlus(cellularType: .GSM))
+        case "iPhone8,4":
+            return Device(model: iPhoneModel.ModelSE(cellularType: .GSM))
+        case "iPhone9,1":
+            return Device(model: iPhoneModel.Model7(cellularType: .GSM))
+        case "iPhone9,2":
+            return Device(model: iPhoneModel.Model7Plus(cellularType: .GSM))
+        case "iPhone9,3":
+            return Device(model: iPhoneModel.Model7(cellularType: .GSM))
+        case "iPhone9,4":
+            return Device(model: iPhoneModel.Model7Plus(cellularType: .GSM))
+        case "iPhone10,1":
+            return Device(model: iPhoneModel.Model8(cellularType: .GSM))
+        case "iPhone10,2":
+            return Device(model: iPhoneModel.Model8Plus(cellularType: .GSM))
+        case "iPhone10,3":
+            return Device(model: iPhoneModel.ModelX(cellularType: .GSM))
+        case "iPhone10,4":
+            return Device(model: iPhoneModel.Model8(cellularType: .GSM))
+        case "iPhone10,5":
+            return Device(model: iPhoneModel.Model8Plus(cellularType: .GSM))
+        case "iPhone10,6":
+            return Device(model: iPhoneModel.ModelX(cellularType: .GSM))
+        case "iPhone11,2":
+            return Device(model: iPhoneModel.ModelXS(cellularType: .GSM))
+        case "iPhone11,6":
+            return Device(model: iPhoneModel.ModelXSMax(cellularType: .GSM))
         default:
             return Device(model: AppleDeviceModel.Simulator)
         }
