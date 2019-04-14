@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0BDBDD2263B97D00EDE0DC /* AppleDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDBDC2263B97D00EDE0DC /* AppleDeviceModel.swift */; };
 		BC31412922514E3C004F7F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC31412822514E3C004F7F0B /* AppDelegate.swift */; };
 		BC31412B22514E3C004F7F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC31412A22514E3C004F7F0B /* ViewController.swift */; };
 		BC31412E22514E3C004F7F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC31412C22514E3C004F7F0B /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC0BDBDC2263B97D00EDE0DC /* AppleDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleDeviceModel.swift; sourceTree = "<group>"; };
 		BC31412522514E3C004F7F0B /* DeviceDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC31412822514E3C004F7F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC31412A22514E3C004F7F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				BC3141402256A7CD004F7F0B /* iPadModel.swift */,
 				BC3141422256A7E7004F7F0B /* WatchModel.swift */,
 				BC3141442256A804004F7F0B /* AppleTVModel.swift */,
+				BC0BDBDC2263B97D00EDE0DC /* AppleDeviceModel.swift */,
 			);
 			path = DeviceModels;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				BC3141452256A804004F7F0B /* AppleTVModel.swift in Sources */,
 				BC3141432256A7E7004F7F0B /* WatchModel.swift in Sources */,
 				BC31413F2256A7A7004F7F0B /* iPhoneModel.swift in Sources */,
+				BC0BDBDD2263B97D00EDE0DC /* AppleDeviceModel.swift in Sources */,
 				BC31412B22514E3C004F7F0B /* ViewController.swift in Sources */,
 				BC31413B22514F22004F7F0B /* DeviceDetector.swift in Sources */,
 				BC31412922514E3C004F7F0B /* AppDelegate.swift in Sources */,
