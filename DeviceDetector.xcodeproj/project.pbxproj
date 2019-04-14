@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		BC0BDC0C2263D3EE00EDE0DC /* DeviceDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0BDC0A2263D3EE00EDE0DC /* DeviceDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC0BDC192263D59600EDE0DC /* DeviceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDC122263D59600EDE0DC /* DeviceDetector.swift */; };
+		BC0BDC1A2263D59600EDE0DC /* AppleDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDC142263D59600EDE0DC /* AppleDeviceModel.swift */; };
+		BC0BDC1B2263D59600EDE0DC /* AppleTVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDC152263D59600EDE0DC /* AppleTVModel.swift */; };
+		BC0BDC1C2263D59600EDE0DC /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDC162263D59600EDE0DC /* WatchModel.swift */; };
+		BC0BDC1D2263D59600EDE0DC /* iPhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDC172263D59600EDE0DC /* iPhoneModel.swift */; };
+		BC0BDC1E2263D59600EDE0DC /* iPadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDC182263D59600EDE0DC /* iPadModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC0BDC072263D3EE00EDE0DC /* DeviceDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0BDC0A2263D3EE00EDE0DC /* DeviceDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceDetector.h; sourceTree = "<group>"; };
 		BC0BDC0B2263D3EE00EDE0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC0BDC122263D59600EDE0DC /* DeviceDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDetector.swift; sourceTree = "<group>"; };
+		BC0BDC142263D59600EDE0DC /* AppleDeviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleDeviceModel.swift; sourceTree = "<group>"; };
+		BC0BDC152263D59600EDE0DC /* AppleTVModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleTVModel.swift; sourceTree = "<group>"; };
+		BC0BDC162263D59600EDE0DC /* WatchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchModel.swift; sourceTree = "<group>"; };
+		BC0BDC172263D59600EDE0DC /* iPhoneModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneModel.swift; sourceTree = "<group>"; };
+		BC0BDC182263D59600EDE0DC /* iPadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +58,24 @@
 		BC0BDC092263D3EE00EDE0DC /* DeviceDetector */ = {
 			isa = PBXGroup;
 			children = (
+				BC0BDC132263D59600EDE0DC /* DeviceModels */,
+				BC0BDC122263D59600EDE0DC /* DeviceDetector.swift */,
 				BC0BDC0A2263D3EE00EDE0DC /* DeviceDetector.h */,
 				BC0BDC0B2263D3EE00EDE0DC /* Info.plist */,
 			);
 			path = DeviceDetector;
+			sourceTree = "<group>";
+		};
+		BC0BDC132263D59600EDE0DC /* DeviceModels */ = {
+			isa = PBXGroup;
+			children = (
+				BC0BDC142263D59600EDE0DC /* AppleDeviceModel.swift */,
+				BC0BDC152263D59600EDE0DC /* AppleTVModel.swift */,
+				BC0BDC162263D59600EDE0DC /* WatchModel.swift */,
+				BC0BDC172263D59600EDE0DC /* iPhoneModel.swift */,
+				BC0BDC182263D59600EDE0DC /* iPadModel.swift */,
+			);
+			path = DeviceModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +121,7 @@
 				TargetAttributes = {
 					BC0BDC062263D3EE00EDE0DC = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0BDC1A2263D59600EDE0DC /* AppleDeviceModel.swift in Sources */,
+				BC0BDC1B2263D59600EDE0DC /* AppleTVModel.swift in Sources */,
+				BC0BDC192263D59600EDE0DC /* DeviceDetector.swift in Sources */,
+				BC0BDC1E2263D59600EDE0DC /* iPadModel.swift in Sources */,
+				BC0BDC1D2263D59600EDE0DC /* iPhoneModel.swift in Sources */,
+				BC0BDC1C2263D59600EDE0DC /* WatchModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +294,7 @@
 		BC0BDC102263D3EE00EDE0DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zaakk.devicedetector.DeviceDetector;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +321,7 @@
 		BC0BDC112263D3EE00EDE0DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
