@@ -14,6 +14,7 @@
 		BC0BDC1C2263D59600EDE0DC /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDC162263D59600EDE0DC /* WatchModel.swift */; };
 		BC0BDC1D2263D59600EDE0DC /* iPhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDC172263D59600EDE0DC /* iPhoneModel.swift */; };
 		BC0BDC1E2263D59600EDE0DC /* iPadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDC182263D59600EDE0DC /* iPadModel.swift */; };
+		BC0BDC202263D6E600EDE0DC /* DeviceDetector.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BC0BDC1F2263D6E600EDE0DC /* DeviceDetector.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BC0BDC162263D59600EDE0DC /* WatchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchModel.swift; sourceTree = "<group>"; };
 		BC0BDC172263D59600EDE0DC /* iPhoneModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneModel.swift; sourceTree = "<group>"; };
 		BC0BDC182263D59600EDE0DC /* iPadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadModel.swift; sourceTree = "<group>"; };
+		BC0BDC1F2263D6E600EDE0DC /* DeviceDetector.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DeviceDetector.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		BC0BDBFD2263D3EE00EDE0DC = {
 			isa = PBXGroup;
 			children = (
+				BC0BDC1F2263D6E600EDE0DC /* DeviceDetector.podspec */,
 				BC0BDC092263D3EE00EDE0DC /* DeviceDetector */,
 				BC0BDC082263D3EE00EDE0DC /* Products */,
 			);
@@ -147,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0BDC202263D6E600EDE0DC /* DeviceDetector.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
