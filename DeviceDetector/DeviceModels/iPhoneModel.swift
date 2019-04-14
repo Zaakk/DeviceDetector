@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum iPhoneModel: AppleDeviceProtocol
+public enum iPhoneModel: AppleDeviceProtocol
 {
     case Original(cellularType: CellularType)
     case Model3G(cellularType: CellularType)
@@ -32,7 +32,7 @@ enum iPhoneModel: AppleDeviceProtocol
     case ModelXS(cellularType: CellularType)
     case ModelXSMax(cellularType: CellularType)
     
-    var rawValue: UInt
+    public var rawValue: UInt
     {
         switch self {
         case .Original(_):

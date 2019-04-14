@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum WatchModel: AppleDeviceProtocol
+public enum WatchModel: AppleDeviceProtocol
 {
     case Original(size: WatchSize)
     case ModelSeries1(size: WatchSize)
@@ -16,7 +16,7 @@ enum WatchModel: AppleDeviceProtocol
     case ModelSeries3(size: WatchSize)
     case ModelSeries4(size: WatchSize)
     
-    var rawValue: UInt
+    public var rawValue: UInt
     {
         switch self {
         case .Original(_):

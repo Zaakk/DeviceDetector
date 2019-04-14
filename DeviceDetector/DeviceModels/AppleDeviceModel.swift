@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum AppleDeviceModel: AppleDeviceProtocol
+public enum AppleDeviceModel: AppleDeviceProtocol
 {
     case Simulator
     
-    var rawValue: UInt
+    public var rawValue: UInt
     {
         return 0
     }

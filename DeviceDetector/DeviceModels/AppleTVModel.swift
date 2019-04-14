@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum AppleTVModel: AppleDeviceProtocol
+public enum AppleTVModel: AppleDeviceProtocol
 {
     case Model2, Model3, Model4, Model4K
     
-    var rawValue: UInt
+    public var rawValue: UInt
     {
         switch self {
         case .Model2:

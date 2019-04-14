@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol AppleDeviceProtocol
+public protocol AppleDeviceProtocol
 {
     var rawValue: UInt { get }
 }
 
-extension AppleDeviceProtocol
+public extension AppleDeviceProtocol
 {
     static func >(lhs: AppleDeviceProtocol, rhs: AppleDeviceProtocol) -> Bool
     {
@@ -41,22 +41,22 @@ extension AppleDeviceProtocol
     }
 }
 
-enum DeviceType
+public enum DeviceType
 {
     case iPhone, iPad, iPod, AppleTV, Watch
 }
 
-enum CellularType
+public enum CellularType
 {
     case GSM, CDMA, WiFi
 }
 
-enum WatchSize
+public enum WatchSize
 {
     case Size38, Size42
 }
 
-class DeviceDetector
+public final class DeviceDetector
 {
     private static func deviceId() -> String
     {
@@ -73,7 +73,7 @@ class DeviceDetector
         return identifier
     }
     
-    static var device: AppleDeviceProtocol
+    public static var device: AppleDeviceProtocol
     {
         switch deviceId() {
         // MARK: Apple T
