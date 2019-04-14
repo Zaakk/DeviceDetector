@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DeviceDetector"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "DeviceDetector lib for device's model detecting on Swift"
   spec.description  = <<-DESC
                    DeviceDetecor library able to detect and compare the device model
