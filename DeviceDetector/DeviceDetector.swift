@@ -15,29 +15,29 @@ public protocol AppleDeviceProtocol
 
 public extension AppleDeviceProtocol
 {
-    static func >(lhs: AppleDeviceProtocol, rhs: AppleDeviceProtocol) -> Bool
+    func `is`(_ device: AppleDeviceProtocol) -> Bool
     {
-        return lhs.rawValue > rhs.rawValue
+        return true
     }
     
-    static func <(lhs: AppleDeviceProtocol, rhs: AppleDeviceProtocol) -> Bool
+    func younger(_ device: AppleDeviceProtocol) -> Bool
     {
-        return lhs.rawValue < rhs.rawValue
+        return self.rawValue > device.rawValue
     }
     
-    static func >=(lhs: AppleDeviceProtocol, rhs: AppleDeviceProtocol) -> Bool
+    func older(_ device: AppleDeviceProtocol) -> Bool
     {
-        return lhs.rawValue >= rhs.rawValue
+        return self.rawValue < device.rawValue
     }
     
-    static func <=(lhs: AppleDeviceProtocol, rhs: AppleDeviceProtocol) -> Bool
+    func youngerOrEqual(_ device: AppleDeviceProtocol) -> Bool
     {
-        return lhs.rawValue <= rhs.rawValue
+        return self.rawValue >= device.rawValue
     }
     
-    static func == (lhs: AppleDeviceProtocol, rhs: AppleDeviceProtocol) -> Bool
+    func olderOrEqual(_ device: AppleDeviceProtocol) -> Bool
     {
-        return lhs.rawValue == rhs.rawValue
+        return self.rawValue <= device.rawValue
     }
 }
 
@@ -76,14 +76,14 @@ public final class DeviceDetector
     public static var device: AppleDeviceProtocol
     {
         switch deviceId() {
-        // MARK: Apple T
+        // MARK: Apple TV
         case "AppleTV2,1":
             return AppleTVModel.Model2
         case "AppleTV3,1":
             return AppleTVModel.Model3
         case "AppleTV3,2":
             return AppleTVModel.Model3
-        // MARK: Apple Watc
+        // MARK: Apple Watch
         case "Watch1,1":
             return WatchModel.Original(size: .Size38)
         case "Watch1,2":
@@ -112,7 +112,7 @@ public final class DeviceDetector
             return WatchModel.ModelSeries4(size: .Size38)
         case "Watch4,4":
             return WatchModel.ModelSeries4(size: .Size42)
-        // MARK: iPa
+        // MARK: iPad
         case "iPad1,1":
             return iPadModel.Original(cellularType: .WiFi)
         case "iPad2,1":
@@ -216,7 +216,7 @@ public final class DeviceDetector
             return iPadModel.ModelMini5(cellularType: .WiFi)
         case "iPad11,2":
             return iPadModel.ModelMini5(cellularType: .GSM)
-        // MARK: iPhon
+        // MARK: iPhone
         case "iPhone1,1":
             return iPhoneModel.Original(cellularType: .GSM)
         case "iPhone1,2":
